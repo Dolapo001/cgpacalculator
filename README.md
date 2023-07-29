@@ -5,10 +5,8 @@ The CGPA Calculator is an intuitive and user-friendly web application designed t
 ## Technologies used
 
 * Python
-* Django (Class-Based Views)
+* Django
 * HTML
-* JavaScript
-* CSS
 * SQlite3
 
 ## Installation
