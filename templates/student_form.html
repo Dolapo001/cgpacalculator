@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPA Calculator - Student Form</title>
+</head>
+<body>
+    <h1>GPA Calculator - Student Form</h1>
+    <form method="POST" action="{% url 'calculator:student_form' %}">
+        {% csrf_token %}
+        <label for="matric_no">Matriculation Number:</label>
+        <input type="text" id="matric_no" name="matric_no" required>
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <h2>Semester 1</h2>
+        <label for="semester1_grades">Grades:</label>
+        <input type="text" id="semester1_grades" name="semester1_grades" required>
+        <br>
+        <label for="semester1_course_units">Course Units:</label>
+        <input type="text" id="semester1_course_units" name="semester1_course_units" required>
+        <br><br>
+        <h2>Semester 2</h2>
+        <label for="semester2_grades">Grades:</label>
+        <input type="text" id="semester2_grades" name="semester2_grades" required>
+        <br>
+        <label for="semester2_course_units">Course Units:</label>
+        <input type="text" id="semester2_course_units" name="semester2_course_units" required>
+        <br><br>
+        <input type="submit" value="Calculate GPA">
+    </form>
+</body>
+</html>
